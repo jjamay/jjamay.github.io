@@ -1,0 +1,104 @@
+body {
+  font: lighter 14pt 'Open Sans', sans-serif;
+}
+#home {
+  height: 100vh;
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 64pt;
+  color: #B31918;
+  font-weight: lighter;
+}
+
+h2 {
+  color: #B31918;
+}
+
+#portrait {
+  border-radius: 50%;
+  height: 400px;
+  max-width: 100%;
+  border: 20px solid #B31918;
+}
+
+.portrait-container {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+  height: 400px;
+  max-width: 100%;
+}
+
+.content {
+  max-width: 700px;
+}
+
+.triangle {
+  z-index: -9999;
+  height: 0;
+  width: 0;
+}
+
+.shadow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom: 100vh solid #f2f2f2;
+  border-left: 100vw solid transparent;
+}
+
+#welcome {
+  background-color: #f2f2f2;
+  font-weight: 400;
+  font-size: 16pt;
+  padding: 50px;
+}
+
+.divider-welcome {
+  border-right: 100vw solid #f2f2f2;
+  border-bottom: 50px solid transparent;
+}
+
+.divider-about {
+  border-right: 100vw solid #ffe6cc;
+  border-top: 70px solid transparent;
+}
+
+.divider-resume {
+  border-right: 100vw solid #ffe6cc;
+  border-bottom: 50px solid #262626;
+}
+
+#resume {
+  background-color: #ffe6cc;
+}
+
+#contact {
+  background-color: #262626;
+  color: white;
+}
+
+#contact h2 {
+  color: #ffe6cc;
+}
+
+.bottom-link {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bottom-link i {
+  font-size: 72pt;
+}
+
+a, a:active, a:hover, a:visited {
+  color: white;
+}
+
+.email {
+  display: none;
+}
