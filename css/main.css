@@ -1,5 +1,6 @@
 body {
   font: lighter 14pt 'Open Sans', sans-serif;
+  text-align: justify;
 }
 #home {
   height: 100vh;
@@ -20,7 +21,7 @@ h2 {
 
 #portrait {
   border-radius: 50%;
-  height: 400px;
+  width: 400px;
   max-width: 100%;
   border: 20px solid #B31918;
 }
@@ -38,12 +39,12 @@ h2 {
 }
 
 .triangle {
-  z-index: -9999;
   height: 0;
   width: 0;
 }
 
 .shadow {
+  z-index: -1000;
   position: absolute;
   right: 0;
   top: 0;
@@ -52,24 +53,29 @@ h2 {
 }
 
 #welcome {
-  background-color: #f2f2f2;
+  background-color: #ffcccc;
   font-weight: 400;
   font-size: 16pt;
   padding: 50px;
 }
 
-.divider-welcome {
+.divider-home {
   border-right: 100vw solid #f2f2f2;
+  border-bottom: 50px solid #ffcccc;
+}
+
+.divider-welcome {
+  border-left: 100vw solid #ffcccc;
   border-bottom: 50px solid transparent;
 }
 
 .divider-about {
-  border-right: 100vw solid #ffe6cc;
-  border-top: 70px solid transparent;
+  border-right: 100vw solid transparent;
+  border-bottom: 50px solid #ffe6cc;
 }
 
 .divider-resume {
-  border-right: 100vw solid #ffe6cc;
+  border-left: 100vw solid #ffe6cc;
   border-bottom: 50px solid #262626;
 }
 
@@ -83,16 +89,16 @@ h2 {
 }
 
 #contact h2 {
-  color: #ffe6cc;
+  color: #ca1c1c;
 }
 
 .bottom-link {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .bottom-link i {
   font-size: 72pt;
+  visibility: visible;
 }
 
 a, a:active, a:hover, a:visited {
@@ -101,4 +107,20 @@ a, a:active, a:hover, a:visited {
 
 .email {
   display: none;
+}
+
+.email-icon {
+  height: 175px;
+}
+
+#map {
+  height: 350px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  color: #8c8c8c;
+  font-size: 12pt;
+  padding: 10px;
+  border-top: 1px solid #d9d9d9;
 }

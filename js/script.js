@@ -1,17 +1,32 @@
 /**
  * Created by J-May on 2016-01-16.
  */
+
 $(document).ready(function() {
+
+     $.getScript("https://maps.googleapis.com/maps/api/js?callback=initMap", function initMap() {
+         var mapDiv = document.getElementById('map');
+         var prison = {lat: 43.4722854, lng: -80.5470463};
+         var map = new google.maps.Map(mapDiv, {
+              center: prison,
+              zoom: 13
+         });
+         var marker = new google.maps.Marker({
+              position: prison,
+              map: map
+         })
+     });
+
      $('#portrait')
      .hover(
           function() {
                $(this).animate({
-                    height: '-=30px'
+                    width: '-=30px'
                }, 200);
           },
           function() {
                $(this).animate({
-                    height: '+=30px'
+                    width: '+=30px'
                }, 200);
           }
      )
@@ -21,7 +36,7 @@ $(document).ready(function() {
           }, 1000)
      });
 
-     $('.bottom-link i')
+     $('.bottom-link a')
      .hover(
           function() {
                $(this).animate({
@@ -34,8 +49,14 @@ $(document).ready(function() {
                }, 200);
           }
      );
-     $('i.fa-envelope-square')
-     .click(function() {
-          $('.email').toggle();
-     })
+
+     $('.fa-envelope-square')
+     .hover(
+          function() {
+               $('.email').fadeIn(200);
+          },
+          function() {
+               $('.email').fadeOut(200);
+          }
+     )
 });
