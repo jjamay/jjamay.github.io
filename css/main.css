@@ -1,7 +1,7 @@
 body {
   font: lighter 14pt 'Open Sans', sans-serif;
-  text-align: justify;
 }
+
 #home {
   height: 100vh;
   width: 100vw;
@@ -30,7 +30,6 @@ h2 {
   display: table-cell;
   vertical-align: middle;
   width: 100vw;
-  height: 400px;
   max-width: 100%;
 }
 
@@ -88,29 +87,33 @@ h2 {
   color: white;
 }
 
-#contact h2 {
-  color: #ca1c1c;
-}
-
 .bottom-link {
   padding-top: 30px;
+  height: 150px;
 }
 
 .bottom-link i {
-  font-size: 72pt;
-  visibility: visible;
+  font-size: 40pt;
+}
+
+@media only screen and (min-width: 768px) {
+  .bottom-link i {
+    font-size: 54pt;
+  }
 }
 
 a, a:active, a:hover, a:visited {
   color: white;
 }
 
-.email {
-  display: none;
+@media only screen and (max-width: 768px) {
+  .email {
+    visibility: hidden;
+  }
 }
 
-.email-icon {
-  height: 175px;
+.email {
+  display: none;
 }
 
 #map {
@@ -123,4 +126,17 @@ footer {
   font-size: 12pt;
   padding: 10px;
   border-top: 1px solid #d9d9d9;
+}
+
+footer p {
+  margin: 0;
+}
+
+#resume-btn {
+  display: block;
+  margin: 20px auto;
+}
+
+#resume-pic {
+  margin-bottom: 20px;
 }

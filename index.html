@@ -17,7 +17,7 @@
 <body>
     <div class="container-fluid text-center" id="home">
         <div class="portrait-container">
-            <img id="portrait" src="images/cover.jpg"/>
+            <img id="portrait" src="images/portrait.jpg"/>
         </div>
         <h1>Jordan May</h1>
         <div class="triangle shadow"></div>
@@ -25,9 +25,12 @@
     <div class="divider-home"></div>
     <div class="container-fluid" id="welcome">
         <div class="content center-block">
-            <span style="font-size: 30pt; color: #B31918">Hi,</span> I'm Jordan and welcome to my website! If you've made it this far,
-            you might as well read on below to learn a bit about me, have a look at my resume,
-            and check out some of the stuff I've done. Enjoy!
+            <h2>Hi,</h2>
+            <p>
+                I'm Jordan and welcome to my website! If you've made it this far,
+                you might as well read on below to learn a bit about me, have a look at my resume,
+                and check out some of the stuff I've done. Enjoy!
+            </p>
         </div>
     </div>
     <div class="triangle divider-welcome"></div>
@@ -65,6 +68,10 @@
                 If you have any openings available, or are NASA looking for an astronaut,
                 feel free to check out my resume below to see if I might be a good fit.
             </p>
+            <button id="resume-btn" class="btn btn-danger" data-toggle="collapse" data-target="#resume-pic">Show Resume</button>
+            <div class="collapse" id="resume-pic">
+                <a href="images/resume.pdf" target="_blank"><img class="img-responsive" src="images/resume.png" /></a>
+            </div>
         </div>
     </div>
     <div class="triangle divider-resume"></div>
@@ -74,24 +81,23 @@
             <p>
                 Want to get in touch? Shoot me an email, check out my LinkedIn, or have a look at my GitHub projects.
             </p>
-            <div class="bottom-link col-sm-4 text-center email-icon">
+            <div class="bottom-link col-xs-4 text-center">
                 <a href="mailto:jjamay@uwaterloo.ca"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
                 <p class="email">
                     jjamay@uwaterloo.ca
                 </p>
             </div>
-            <div class="bottom-link col-sm-4 text-center">
+            <div class="bottom-link col-xs-4 text-center">
                 <a href="https://ca.linkedin.com/in/jjamay"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </div>
-            <div class="bottom-link col-sm-4 text-center">
+            <div class="bottom-link col-xs-4 text-center">
                 <a href="https://github.com/jjamay"><i class="fa fa-github-square" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
     <div id="map"></div>
     <footer class="container-fluid text-center">
-        <p>Designed and coded by Jordan May</p>
-        <p>in Goderich, Ontario, Canada</p>
+        <p>Designed and coded by Jordan May in Goderich, Ontario, Canada</p>
     </footer>
 </body>
 </html>

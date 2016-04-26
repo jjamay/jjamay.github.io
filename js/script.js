@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
 
-     $.getScript("https://maps.googleapis.com/maps/api/js?callback=initMap", function initMap() {
+     $.getScript("https://maps.googleapis.com/maps/api/js", function () {
          var mapDiv = document.getElementById('map');
          var prison = {lat: 43.4722854, lng: -80.5470463};
          var map = new google.maps.Map(mapDiv, {
@@ -17,16 +17,20 @@ $(document).ready(function() {
          })
      });
 
+     $('.portrait-container').height(function() {
+          return $('#portrait').outerHeight();
+     })
+
      $('#portrait')
      .hover(
           function() {
                $(this).animate({
-                    width: '-=30px'
+                    width: '-=20px'
                }, 200);
           },
           function() {
                $(this).animate({
-                    width: '+=30px'
+                    width: '+=20px'
                }, 200);
           }
      )
@@ -58,5 +62,13 @@ $(document).ready(function() {
           function() {
                $('.email').fadeOut(200);
           }
-     )
+     );
+
+     $('#resume-btn').click(function() {
+          if ($(this).hasClass('collapsed')) {
+               $(this).html('Show Resume');
+          } else {
+               $(this).html('Hide Resume');
+          }
+     });
 });
