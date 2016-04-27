@@ -48,33 +48,28 @@ h2 {
   right: 0;
   top: 0;
   border-bottom: 100vh solid #f2f2f2;
-  border-left: 100vw solid transparent;
 }
 
 #welcome {
   background-color: #ffcccc;
   font-weight: 400;
   font-size: 16pt;
-  padding: 50px;
+  padding: 30px;
 }
 
 .divider-home {
-  border-right: 100vw solid #f2f2f2;
   border-bottom: 50px solid #ffcccc;
 }
 
 .divider-welcome {
-  border-left: 100vw solid #ffcccc;
   border-bottom: 50px solid transparent;
 }
 
 .divider-about {
-  border-right: 100vw solid transparent;
   border-bottom: 50px solid #ffe6cc;
 }
 
 .divider-resume {
-  border-left: 100vw solid #ffe6cc;
   border-bottom: 50px solid #262626;
 }
 
@@ -104,12 +99,6 @@ h2 {
 
 a, a:active, a:hover, a:visited {
   color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  .email {
-    visibility: hidden;
-  }
 }
 
 .email {

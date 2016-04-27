@@ -17,6 +17,14 @@ $(document).ready(function() {
          })
      });
 
+     var screenWidth = $('body').width();
+
+     $('.shadow').css('border-left', screenWidth + 'px solid transparent');
+     $('.divider-home').css('border-right', screenWidth + 'px solid #f2f2f2');
+     $('.divider-welcome').css('border-left', screenWidth + 'px solid #ffcccc');
+     $('.divider-about').css('border-right', screenWidth + 'px solid transparent');
+     $('.divider-resume').css('border-left', screenWidth + 'px solid #ffe6cc');
+
      $('.portrait-container').height(function() {
           return $('#portrait').outerHeight();
      })
@@ -64,11 +72,11 @@ $(document).ready(function() {
           }
      );
 
-     $('#resume-btn').click(function() {
-          if ($(this).hasClass('collapsed')) {
-               $(this).html('Show Resume');
-          } else {
-               $(this).html('Hide Resume');
-          }
-     });
+     $('#resume-pic')
+     .on('hide.bs.collapse', function() {
+          $('#resume-btn').text('Show Resume');
+     })
+     .on('show.bs.collapse', function() {
+          $('#resume-btn').text('Hide Resume');
+     })
 });
