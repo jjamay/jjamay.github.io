@@ -24,7 +24,7 @@ h2 {
 #portrait {
   border-radius: 50%;
   width: 400px;
-  max-width: 100%;
+  max-width: 80%;
   border: 20px solid #B31918;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
