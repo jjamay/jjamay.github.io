@@ -17,50 +17,12 @@ $(document).ready(function() {
          })
      });
 
-     var screenWidth = $('body').width();
-
-     $('.shadow').css('border-left', screenWidth + 'px solid transparent');
-     $('.divider-home').css('border-right', screenWidth + 'px solid #f2f2f2');
-     $('.divider-welcome').css('border-left', screenWidth + 'px solid #ffcccc');
-     $('.divider-about').css('border-right', screenWidth + 'px solid transparent');
-     $('.divider-resume').css('border-left', screenWidth + 'px solid #ffe6cc');
-
-     $('.portrait-container').height(function() {
-          return $('#portrait').outerHeight();
-     })
-
      $('#portrait')
-     .hover(
-          function() {
-               $(this).animate({
-                    width: '-=20px'
-               }, 200);
-          },
-          function() {
-               $(this).animate({
-                    width: '+=20px'
-               }, 200);
-          }
-     )
      .click(function() {
           $('html, body').animate({
                scrollTop: $('#welcome').offset().top
           }, 1000)
      });
-
-     $('.bottom-link a')
-     .hover(
-          function() {
-               $(this).animate({
-                    color: '#B31918'
-               }, 200);
-          },
-          function() {
-               $(this).animate({
-                    color: 'white'
-               }, 200);
-          }
-     );
 
      $('.fa-envelope-square')
      .hover(
