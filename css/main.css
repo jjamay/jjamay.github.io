@@ -68,15 +68,6 @@ h2 {
   color: white;
 }
 
-.top-angle:before {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 50px;
-  z-index: -1;
-  -webkit-backface-visibility: hidden;
-}
-
 .bottom-angle:after, .top-angle:before {
   background: inherit;
   content: '';
@@ -94,6 +85,10 @@ h2 {
 #welcome:after {
   transform: skewY(-1.5deg);
   transform-origin: 100%;
+}
+
+#about {
+  background-color: #f2f2f2;
 }
 
 #resume {
